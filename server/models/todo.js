@@ -1,5 +1,14 @@
 const mongoose = require('mongoose');
 
+let us = {
+    email: 'dibmehrm@gmail.com',
+    password: '1234',
+    tokens: [{
+        access: 'auth',
+        token: 'kjaldjadljasdlajsdas'
+    }]
+};
+
 let Todo = mongoose.model('Todo', {
     text: {
         type: String,
